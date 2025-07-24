@@ -12,7 +12,9 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "fhevm": "^0.6.2"
+    "encrypted-types": "^0.0.4",
+    "@fhevm/solidity": "^0.7.0",
+    "@zama-fhe/oracle-solidity": "^0.1.0"
   },
   "devDependencies": {
     "@types/chai": "^5.2.2",
@@ -23,8 +25,10 @@
     "solc": "0.8.24",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3",
-    "@fhevm/sdk": "^0.7.0-20",
-    "@fhevm/mock-utils": "^0.0.1-0",
+    "ethers": "^6.15.0",
+    "@nomicfoundation/hardhat-ethers": "^3.1.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.1.0",
+    "@fhevm/mock-utils": "^0.0.1-6",
     "@fhevm/hardhat-plugin": "^0.0.1-6",
     "@zama-fhe/relayer-sdk": "^0.1.2"
   }
