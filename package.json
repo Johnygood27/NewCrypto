@@ -1,0 +1,31 @@
+{
+  "name": "newcrypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "fhevm": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/chai": "^5.2.2",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^24.1.0",
+    "chai": "^5.2.1",
+    "hardhat": "^2.26.1",
+    "solc": "0.8.24",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "@fhevm/sdk": "^0.7.0-20",
+    "@fhevm/mock-utils": "^0.0.1-0",
+    "@fhevm/hardhat-plugin": "^0.0.1-6",
+    "@zama-fhe/relayer-sdk": "^0.1.2"
+  }
+}
