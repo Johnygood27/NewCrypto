@@ -9,9 +9,9 @@ This project demonstrates a simple confidential voting dApp using the Zama FHEVM
    pnpm install
    ```
 2. Compile the contracts offline using the bundled solc:
-  ```bash
-  pnpm compile
-  ```
+   ```bash
+   pnpm compile
+   ```
 3. Deploy the contract:
   ```bash
   pnpm hardhat run scripts/deploy.ts --network sepolia
@@ -22,4 +22,4 @@ This project demonstrates a simple confidential voting dApp using the Zama FHEVM
   ```
 5. Frontend lives in `frontend/`.
 
-The Hardhat configuration uses a local `solc` compiler and never fetches binaries from `binaries.soliditylang.org`.
+The Hardhat configuration overrides Hardhat's compiler task to load `node_modules/solc/soljson.js` directly so no remote downloads are required.

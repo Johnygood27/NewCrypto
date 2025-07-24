@@ -1,6 +1,18 @@
 import path from "path";
-import { HardhatUserConfig } from "hardhat/config";
+import { HardhatUserConfig, subtask } from "hardhat/config";
+import { TASK_COMPILE_SOLIDITY_GET_SOLC_BUILD } from "hardhat/builtin-tasks/task-names";
 import "@fhevm/hardhat-plugin";
+
+// Use the locally installed solc instead of downloading it
+subtask(TASK_COMPILE_SOLIDITY_GET_SOLC_BUILD).setAction(async () => {
+  const solcJsPath = path.resolve(__dirname, "node_modules", "solc", "soljson.js");
+  return {
+    compilerPath: solcJsPath,
+    isSolcJs: true,
+    version: "0.8.24",
+    longVersion: "0.8.24",
+  };
+});
 
 const config: HardhatUserConfig = {
   solidity: {
