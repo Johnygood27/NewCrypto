@@ -17,6 +17,8 @@ pnpm compile
 ```
 
 Compilation runs with the local `solc` compiler defined in `hardhat.config.ts`.
+The config resolves `solc/soljson.js` from `node_modules` so all builds work
+offline as long as the `solc` package is installed.
 
 ## Run tests
 
