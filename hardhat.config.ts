@@ -73,6 +73,9 @@ const config: HardhatUserConfig = {
             runs: 200,
           },
         },
+        // Use local solc to avoid network download issues
+        // The path is resolved from the installed "solc" package
+        path: require.resolve("solc/soljson.js"),
       },
     ],
   },
