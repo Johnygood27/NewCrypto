@@ -1,5 +1,5 @@
 import { ethers } from 'ethers'
-import FHEBallot from '../../artifacts/contracts/FHEBallot.sol/FHEBallot.json'
+import FHEBallot from '../../backend/artifacts/contracts/FHEBallot.sol/FHEBallot.json'
 
 export async function getContract() {
   const provider = new ethers.providers.Web3Provider((window as any).ethereum)
